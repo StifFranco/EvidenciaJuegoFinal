@@ -1,0 +1,102 @@
+body{
+    background-image: url(/img/Fondo\ Batalla\ 1.gif);
+    background-size: 100%;
+    margin: 0;
+}
+
+/*Título de bienvenida*/
+.title_match{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+/*Personajes contenedor*/
+.characters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+/*Imagenes o caracterizacion de los personajes y su posicion*/
+.warrior_image img, .enemy_image img{
+    width: 100vh;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    top: 50vh;
+}
+
+/*Contenedor de los ataques*/
+.attacks {  
+    display: block;
+    position: relative;
+    float: left;
+    bottom: 50vh;
+    left: 80px;
+}
+
+/*Posicion gráfica de los ataques*/
+.attacks img{
+    width: 120px;
+    top: 110vh;
+    margin-bottom: 0%;
+    z-index: 1; 
+}
+
+/*Contenedor de las defensas*/
+.defense {  
+    display: block;
+    position: relative;
+    float: right;
+    bottom: 50vh;
+    right: 80px;
+}
+
+/*Posicion gráfica de las defensas*/
+.defense img{
+    width: 120px;
+    top: 130vh;
+    margin-bottom: 0%;
+    z-index: 1; 
+}
+
+/*Notificacion de los eventos en la partida*/
+
+.notifica_acciones{
+    border: 4px solid blue;
+    border-radius: 20px;
+    padding:  30px;
+    margin: 20% 20% 0% 20%;
+    background-color: rgb(76, 0, 139);
+    z-index: 0;
+}
+
+/*Texto de notificacion*/
+#acciones-juego{
+    font-size: 70px;
+    color: rgb(126, 128, 0);
+    justify-content: center;
+    text-align: center;
+    font-family:  "Helvetica Neue";
+}
+
+/*Barras de vida de los personajes*/
+.player-life, .machine-life {
+    height: 20px;
+    background-color: green;
+    margin-bottom: 10px;
+}
+
+.player-life{
+    margin-top: 10%;
+    margin-left: 60px;
+    margin-right: 60%;
+
+}
+
+.machine-life{
+    margin-left: 60%;
+    margin-right: 60px;
+} 
